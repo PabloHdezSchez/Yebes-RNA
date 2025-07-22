@@ -1,0 +1,2 @@
+# Modo de depuración
+DEBUG;

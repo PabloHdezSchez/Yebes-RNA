@@ -1,0 +1,34 @@
+# Archivos y carpetas de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+*.egg-info/
+dist/
+build/
+
+# Archivos temporales y de logs
+*.log
+*.tmp
+*.bak
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de salida y datos generados
+*.csv
+*.xlsx
+*.out
+
+# Archivos de scripts generados
+*_clean.csv
+
+# Archivos de usuario
+*.swp
