@@ -1,6 +1,6 @@
 # Analizador PNA N5227B
 
-Este programa permite controlar y automatizar el analizador de redes Keysight PNA N5227B a través de una conexión Ethernet, enviando comandos SCPI mediante scripts de texto. Está pensado para facilitar la gestión de macros, la ejecución de comandos personalizados y la interacción remota con el instrumento.
+Este programa permite controlar y automatizar el analizador de redes Keysight PNA N5227B a través de una conexión Ethernet, enviando comandos SCPI mediante scripts de texto. Está pensado para facilitar la gestión de macros Visual Basic ejecutables en el analizador, la ejecución de comandos personalizados y la interacción remota con el instrumento.
 
 ## Funcionalidades principales
 
@@ -11,7 +11,9 @@ Este programa permite controlar y automatizar el analizador de redes Keysight PN
 - **Modo terminal SCPI**: Permite enviar comandos SCPI manualmente y ver la respuesta en tiempo real.
 - **Procesamiento flexible de comandos**: Los scripts admiten varios tipos de comandos y argumentos.
 
-## Formato de los scripts
+## Formato de los scripts personalizados
+
+Además de gestionar los macros en Visual Basic se pueden crear ficheros de comandos personalizados directamente. **Recomendados únicamente** para gestiones rápidas y pruebas.
 
 Cada línea válida debe tener el formato `[tipo];[comando]`, donde:
 
@@ -22,7 +24,7 @@ Cada línea válida debe tener el formato `[tipo];[comando]`, donde:
 - `DEBUG;` → Inicia el modo terminal interactivo SCPI.
 - **Nota:** El tipo `R;` no está soportado en el PNA, ya que no existe el comando SCPI `READ`.
 
-## Ejemplo de archivo de script
+## Ejemplo de archivo de script personalizado
 
 ```cnf
 # Este es un comentario
@@ -60,6 +62,11 @@ Una vez conectado, el menú permite:
 - Módulo `instrument_ethernet.py` en el mismo directorio
 - Conexión de red al instrumento PNA N5227B
 
+## Notas
+
+Este software se encuentra en fase de desarrollo.
+
 ## Autor
 
-Desarrollado por Pablo H.
+Pablo H.
+
